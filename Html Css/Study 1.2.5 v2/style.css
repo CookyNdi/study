@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px 0 30px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container-button-navbar {
+    width: 120px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.button-navbar {
+    background-color: rgb(236, 143, 37);
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: hidden;
+}
+
+.container-page-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(asset/image/background.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.event-1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+}
+
+.logo-aov {
+    width: 250px;
+}
+
+.event-2 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 58%;
+}
+
+.logo-play {
+    width: 100px;
+}
+
+.event-3 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+}
+
+.event-3-button {
+    width: 150px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    font-weight: 500;
+    text-align: center;
+    border: solid;
+    border-color: white 2px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.event-3-playstore {
+    width: 40px;
+}
+
+.event-3-appstore {
+    width: 40px;
+}
+
+.page-2-h1 {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 115%;
+    color: white;
+}

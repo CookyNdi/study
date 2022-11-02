@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Poppins&family=Roboto&family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+  box-sizing: border-box;
+}
+
+:root {
+  /* summerSplash */
+  --backgroundColorPrimary: #d4f1f4;
+  --navColor: #189ab4;
+  --backgroundColorSeccond: #75e6da;
+  --fontColor: #05445e;
+  --fontNavColor: #fff;
+  --borderColor: #111;
+}
+
+/* brightLights */
+html[data-color-mode="brightLights"] {
+  --backgroundColorPrimary: #68bbe3;
+  --navColor: #055c9d;
+  --backgroundColorSeccond: #0e86d4;
+  --fontColor: #003060;
+  --fontNavColor: #fff;
+  --borderColor: #fff;
+}
+
+/* icyGradient */
+html[data-color-mode="icyGradient"] {
+  --backgroundColorPrimary: #c8f4f9;
+  --navColor: #c26dbc;
+  --backgroundColorSeccond: #eeb5eb;
+  --fontColor: #3cacae;
+  --fontNavColor: #fff;
+  --borderColor: #111;
+}
+
+/* scoopingIceCream */
+html[data-color-mode="scoopingIceCream"] {
+  --backgroundColorPrimary: #e4d4c8;
+  --navColor: #a47551;
+  --backgroundColorSeccond: #d0b49f;
+  --fontColor: #523a28;
+  --fontNavColor: #fff;
+  --borderColor: #111;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--backgroundColorPrimary);
+}
+
+#containerNav {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: var(--navColor);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav1 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav .nav1 h1 {
+  font-size: 30px;
+  color: var(--fontNavColor);
+  letter-spacing: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+nav .nav1 ul {
+  display: flex;
+}
+
+nav .nav1 ul li {
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+nav .nav1 ul li a {
+  font-size: 20px;
+  color: var(--fontNavColor);
+  text-decoration: none;
+}
+
+nav .nav2 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav .nav2 h1 {
+  font-size: 20px;
+  color: var(--fontNavColor);
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#logoutText {
+  display: none;
+}
+
+#eror {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: -100px;
+  transition: 0.5s;
+}
+
+#eror h1 {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
+  padding: 15px;
+  color: var(--fontNavColor);
+}
+
+#sideLogin {
+  position: fixed;
+  display: flex;
+  width: 350px;
+  background-color: var(--navColor);
+  height: 50px;
+  align-items: center;
+  top: 0;
+  right: -350px;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+#sideLogin a {
+  color: var(--fontNavColor);
+  cursor: pointer;
+}
+
+#sideRegis {
+  position: fixed;
+  display: flex;
+  width: 350px;
+  background-color: var(--navColor);
+  height: 50px;
+  align-items: center;
+  top: 0;
+  right: -350px;
+  transition: 0.5s;
+}
+
+#sideRegis a {
+  color: var(--fontNavColor);
+  cursor: pointer;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 120px;
+  height: 20px;
+  margin-left: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  color: var(--fontColor);
+}
+
+#loginBtn {
+  width: 50px;
+  height: 20px;
+  display: block;
+  margin-left: 10px;
+  border: none;
+  border-radius: 2px;
+  color: var(--fontColor);
+  cursor: pointer;
+}
+
+#regisBtn {
+  width: 50px;
+  height: 20px;
+  display: block;
+  margin-left: 10px;
+  border: none;
+  border-radius: 2px;
+  color: var(--fontColor);
+  cursor: pointer;
+}
+
+#containerContent {
+  width: 100%;
+  height: 90%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContent1 {
+  width: 180px;
+  height: 220px;
+  position: relative;
+  margin: 0 20px;
+  background-color: var(--backgroundColorSeccond);
+  border-radius: 5px;
+  border: var(--borderColor) solid 2px;
+}
+
+.cardContent1 .color {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  border-bottom: var(--borderColor) solid 2px;
+}
+
+.cardContent1 .color .c1 {
+  width: 45px;
+  height: 100%;
+  background-color: #05445e;
+}
+
+.cardContent1 .color .c2 {
+  width: 45px;
+  height: 100%;
+  background-color: #189ab4;
+}
+
+.cardContent1 .color .c3 {
+  width: 45px;
+  height: 100%;
+  background-color: #75e6da;
+}
+
+.cardContent1 .color .c4 {
+  width: 45px;
+  height: 100%;
+  background-color: #d4f1f4;
+}
+
+.cardContent1 p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: var(--fontColor);
+}
+
+.cardContent1 button {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--fontNavColor);
+  background-color: var(--navColor);
+}
+
+.cardContent2 {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  margin: 0 20px;
+  background-color: var(--backgroundColorSeccond);
+  border-radius: 5px;
+  border: var(--borderColor) solid 2px;
+}
+
+.cardContent2 .color {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  border-bottom: var(--borderColor) solid 2px;
+}
+
+.cardContent2 .color .c1 {
+  width: 45px;
+  height: 100%;
+  background-color: #68bbe3;
+}
+
+.cardContent2 .color .c2 {
+  width: 45px;
+  height: 100%;
+  background-color: #0e86d4;
+}
+
+.cardContent2 .color .c3 {
+  width: 45px;
+  height: 100%;
+  background-color: #055c9d;
+}
+
+.cardContent2 .color .c4 {
+  width: 45px;
+  height: 100%;
+  background-color: #003060;
+}
+
+.cardContent2 p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: var(--fontColor);
+}
+
+.cardContent2 button {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--fontNavColor);
+  background-color: var(--navColor);
+}
+
+.cardContent3 {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  margin: 0 20px;
+  background-color: var(--backgroundColorSeccond);
+  border-radius: 5px;
+  border: var(--borderColor) solid 2px;
+}
+
+.cardContent3 .color {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  border-bottom: var(--borderColor) solid 2px;
+}
+
+.cardContent3 .color .c1 {
+  width: 45px;
+  height: 100%;
+  background-color: #eeb5eb;
+}
+
+.cardContent3 .color .c2 {
+  width: 45px;
+  height: 100%;
+  background-color: #c26dbc;
+}
+
+.cardContent3 .color .c3 {
+  width: 45px;
+  height: 100%;
+  background-color: #c8f4f9;
+}
+
+.cardContent3 .color .c4 {
+  width: 45px;
+  height: 100%;
+  background-color: #3cacae;
+}
+
+.cardContent3 p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: var(--fontColor);
+}
+
+.cardContent3 button {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--fontNavColor);
+  background-color: var(--navColor);
+}
+
+.cardContent4 {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  margin: 0 20px;
+  background-color: var(--backgroundColorSeccond);
+  border-radius: 5px;
+  border: var(--borderColor) solid 2px;
+}
+
+.cardContent4 .color {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  border-bottom: var(--borderColor) solid 2px;
+}
+
+.cardContent4 .color .c1 {
+  width: 45px;
+  height: 100%;
+  background-color: #e4d4c8;
+}
+
+.cardContent4 .color .c2 {
+  width: 45px;
+  height: 100%;
+  background-color: #d0b49f;
+}
+
+.cardContent4 .color .c3 {
+  width: 45px;
+  height: 100%;
+  background-color: #a47551;
+}
+
+.cardContent4 .color .c4 {
+  width: 45px;
+  height: 100%;
+  background-color: #523a28;
+}
+
+.cardContent4 p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: var(--fontColor);
+}
+
+.cardContent4 button {
+  display: block;
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--fontNavColor);
+  background-color: var(--navColor);
+}
+
+.locked {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  display: flex;
+  text-align: center;
+}
+
+.locked h1 {
+  color: var(--fontNavColor);
+  margin: auto;
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 2px;
+}
+
+.locked h1 span {
+  font-size: 20px;
+}
+
+.unlock {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  nav {
+    height: 70px;
+  }
+  nav .nav1 h1 {
+    font-size: 35px;
+  }
+  nav .nav1 ul li a {
+    font-size: 22px;
+  }
+  nav .nav2 h1 {
+    font-size: 22px;
+  }
+  #sideLogin {
+    height: 70px;
+    padding: 5px;
+  }
+  #sideRegis {
+    height: 70px;
+    padding: 5px;
+  }
+  #eror h1 {
+    background-color: var(--navColor);
+    width: 500px;
+  }
+  .content {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .cardContent1 {
+    width: 300px;
+    height: 340px;
+    margin: 5px;
+  }
+  .cardContent1 .color {
+    height: 200px;
+  }
+  .cardContent1 .color .c1 {
+    width: 25%;
+  }
+  .cardContent1 .color .c2 {
+    width: 25%;
+  }
+  .cardContent1 .color .c3 {
+    width: 25%;
+  }
+  .cardContent1 .color .c4 {
+    width: 25%;
+  }
+  .cardContent1 p {
+    font-size: 40px;
+  }
+  .cardContent1 button {
+    width: 120px;
+    height: 45px;
+    font-size: 30px;
+  }
+  .cardContent2 {
+    width: 300px;
+    height: 340px;
+    margin: 5px;
+  }
+  .cardContent2 .color {
+    height: 200px;
+  }
+  .cardContent2 .color .c1 {
+    width: 25%;
+  }
+  .cardContent2 .color .c2 {
+    width: 25%;
+  }
+  .cardContent2 .color .c3 {
+    width: 25%;
+  }
+  .cardContent2 .color .c4 {
+    width: 25%;
+  }
+  .cardContent2 p {
+    font-size: 40px;
+  }
+  .cardContent2 button {
+    width: 120px;
+    height: 45px;
+    font-size: 30px;
+  }
+  .cardContent3 {
+    width: 300px;
+    height: 340px;
+    margin: 5px;
+  }
+  .cardContent3 .color {
+    height: 200px;
+  }
+  .cardContent3 .color .c1 {
+    width: 25%;
+  }
+  .cardContent3 .color .c2 {
+    width: 25%;
+  }
+  .cardContent3 .color .c3 {
+    width: 25%;
+  }
+  .cardContent3 .color .c4 {
+    width: 25%;
+  }
+  .cardContent3 p {
+    font-size: 40px;
+  }
+  .cardContent3 button {
+    width: 120px;
+    height: 45px;
+    font-size: 30px;
+  }
+  .cardContent4 {
+    width: 300px;
+    height: 340px;
+    margin: 5px;
+  }
+  .cardContent4 .color {
+    height: 200px;
+  }
+  .cardContent4 .color .c1 {
+    width: 25%;
+  }
+  .cardContent4 .color .c2 {
+    width: 25%;
+  }
+  .cardContent4 .color .c3 {
+    width: 25%;
+  }
+  .cardContent4 .color .c4 {
+    width: 25%;
+  }
+  .cardContent4 p {
+    font-size: 40px;
+  }
+  .cardContent4 button {
+    width: 120px;
+    height: 45px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    height: auto;
+  }
+  nav {
+    height: 130px;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+  }
+  nav .nav1 {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav .nav1 h1 {
+    font-size: 40px;
+    margin-right: 0;
+  }
+  nav .nav1 ul li a {
+    font-size: 18px;
+  }
+  nav .nav2 {
+    padding: 5px;
+    margin: auto;
+  }
+  nav .nav2 h1 {
+    font-size: 18px;
+    justify-content: space-around;
+  }
+  #sideLogin {
+    height: 50px;
+    padding: 5px;
+  }
+  #sideRegis {
+    height: 50px;
+    padding: 5px;
+  }
+  #eror {
+    background-color: var(--navColor);
+  }
+  .mobile {
+    width: 100%;
+    height: 130px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .cardContent1 {
+    margin: 10px auto;
+  }
+  .cardContent2 {
+    margin: 10px auto;
+  }
+  .cardContent3 {
+    margin: 10px auto;
+  }
+  .cardContent4 {
+    margin: 10px auto;
+  }
+}

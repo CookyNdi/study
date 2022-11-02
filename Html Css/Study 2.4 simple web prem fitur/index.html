@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="summerSplash">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="asset/theme.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ThemeUwU</title>
+  </head>
+
+  <body>
+    <section id="containerNav">
+      <nav>
+        <div class="nav1">
+          <h1>ThemeUwU</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav2">
+          <h1 onclick="login()" id="loginText">login</h1>
+          <h1 onclick="regis()" id="regisText">register</h1>
+          <h1 onclick="Logout()" id="logoutText">Logout</h1>
+        </div>
+        <div id="sideLogin">
+          <a
+            ><i class="fa fa-times" onclick="closeLogin()" id="closeBtn"></i
+          ></a>
+          <input placeholder="username" type="text" id="usernameInput" />
+          <input placeholder="password" type="password" id="passwordInput" />
+          <button type="submit" id="loginBtn" onclick="onLogin()">Login</button>
+        </div>
+        <div id="sideRegis">
+          <a
+            ><i class="fa fa-times" onclick="closeRegis()" id="closeBtn"></i
+          ></a>
+          <input placeholder="username" type="text" id="regisUsernameInput" />
+          <input
+            placeholder="password"
+            type="password"
+            id="regisPasswordInput"
+          />
+          <button type="submit" id="regisBtn" onclick="onRegis()">
+            Register
+          </button>
+        </div>
+        <div id="eror">
+          <h1>Username atau Password anda salah!!</h1>
+        </div>
+      </nav>
+      <div class="mobile"></div>
+    </section>
+    <section id="containerContent">
+      <div class="content">
+        <div class="cardContent1">
+          <div class="color">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+          </div>
+          <p>Summer Splash</p>
+          <button type="submit" onclick="color1()">Switch</button>
+        </div>
+        <div class="cardContent2">
+          <div id="locked" class="locked">
+            <h1><i class="fa fa-lock"></i><span>login for unlock</span></h1>
+          </div>
+          <div class="color">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+          </div>
+          <p>Bright Lights</p>
+          <button type="submit" onclick="color2()">Switch</button>
+        </div>
+        <div class="cardContent3">
+          <div id="locked2" class="premium locked">
+            <h1><i class="fa fa-lock"></i><span>login for unlock</span></h1>
+          </div>
+          <div class="color">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+          </div>
+          <p>Icy Gradient</p>
+          <button type="submit" onclick="color3()">Switch</button>
+        </div>
+        <div class="cardContent4">
+          <div id="locked3" class="locked">
+            <h1><i class="fa fa-lock"></i><span>login for unlock</span></h1>
+          </div>
+          <div class="color">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+            <div class="c4"></div>
+          </div>
+          <p>Icy Gradient</p>
+          <button type="submit" onclick="color4()">Switch</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

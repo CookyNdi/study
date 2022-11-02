@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.containerNavText {
+    width: 100%;
+    height: 50px;
+    background: #212225;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+body.dark .containerNavText{
+    background: #DADADA;
+}
+
+.logoList {
+    display: flex;
+    align-items: center;
+}
+
+.logoList a {
+    text-decoration: none;
+}
+
+.logoList a h1 {
+    padding: 20px;
+    color: #ECECEC;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+body.dark .logoList a h1{
+    color: #1D1E20;
+}
+
+.logoList ul {
+    display: flex;
+}
+
+.logoList ul li {
+    list-style-type: none;
+    padding: 18px;
+    font-weight: 600;
+}
+
+.logoList ul li a {
+    text-decoration: none;
+    color: #ECECEC;
+}
+
+body.dark .logoList ul li a{
+    color: #1D1E20;
+}
+
+#darkBtn {
+    width: 50px;
+    height: 25px;
+    background: #ECECEC;
+    border-radius: 12px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: #ECECEC solid .3px;
+    transition: .5s;
+}
+
+#darkBtn::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1D1E20;
+    left: 0;
+}
+
+#darkBtn::after {
+    content: '\f186';
+    font-family: fontAwesome;
+    color: #ECECEC;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4px;
+    margin-left: 7px;
+    left: 0;
+}
+
+body.dark #lightBtn {
+    width: 50px;
+    height: 25px;
+    background: #1D1E20;
+    border-radius: 12px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: #1D1E20 solid .3px;
+    transition: .5s;
+}
+
+body.dark #lightBtn::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ECECEC;
+    right: 0;
+}
+
+body.dark #lightBtn::after {
+    content: '\f185';
+    font-family: fontAwesome;
+    color: #1D1E20;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4px;
+    margin-right: 4px;
+    right: 0;
+}
+
+
+
+/* content */
+
+.content {
+    background-color: #1D1E20;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+
+body.dark .content{
+    background-color: #ECECEC;
+}
+
+.mainText {
+    margin-top: 50px;
+    color: #ECECEC;
+    font-size: 75px;
+    letter-spacing: 10px;
+    margin-left: 30px;
+}
+
+body.dark .mainText{
+    color: #1D1E20;
+}
+
+.desc {
+    color: #ECECEC;
+    font-size: 20px;
+    margin-left: 70px;
+    letter-spacing: 1px;
+}
+
+body.dark .desc{
+    color: #1D1E20;
+}
+
+.button {
+    padding: 30px;
+    margin-left: 80px;
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    position: relative;
+    margin: 0 10px;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #ECECEC;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+}
+
+body.dark .btn {
+    border: 3px solid #1D1E20;
+}
+
+.btn p {
+    text-align: center;
+    color: #ECECEC;
+    margin: auto;
+    transition: .5s;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+body.dark .btn p{
+    color: #1D1E20;
+}
+
+.btn::before {
+    content: '';
+    width: 0%;
+    height: 120%;
+    border-radius: 30px;
+    background: #ECECEC;
+    transition: .5s;
+    position: absolute;
+    z-index: -1;
+}
+
+body.dark .btn::before{
+    background: #1D1E20;
+}
+
+.btn:hover.btn::before {
+    width: 100%;
+}
+
+body.dark .btn:hover.btn::before{
+    background: #1D1E20;
+}
+
+.btn:hover.btn p {
+    color: #1D1E20;
+}
+
+body.dark .btn:hover.btn p{
+    color: #ECECEC;
+}

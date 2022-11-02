@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #root {
+        background-color: tomato;
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #form {
+        margin-top: 20px;
+    }
+
+    #root h3 {
+        display: none;
+    }
+
+    #logout {
+        display: none;
+    }
+
+    /* The message box is shown when the user clicks on the password field */
+    #message {
+        display: none;
+        background: #f1f1f1;
+        color: #000;
+        position: relative;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    #message p {
+        padding: 10px 35px;
+        font-size: 18px;
+    }
+
+    /* Add a green text color and a checkmark when the requirements are right */
+    .valid {
+        color: green;
+    }
+
+    .valid:before {
+        position: relative;
+        left: -35px;
+        content: "✔";
+    }
+
+    /* Add a red text color and an "x" icon when the requirements are wrong */
+    .invalid {
+        color: red;
+    }
+
+    .invalid:before {
+        position: relative;
+        left: -35px;
+        content: "✖";
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        background: #eaeaea;
+        border: 10px solid #eaeaea;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <a href="register.html" id="register">register</a>
+        <div id="form">
+            <h5>login</h5>
+            <input placeholder="username" type="text" id="usernameInput" />
+            <input placeholder="password" type="password" id="passwordInput"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required />
+            <button onclick="onLogin()" id="btn">login</button>
+        </div>
+        <div id="message">
+            <h4>Password must contain the following:</h4>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+        <button id="logout" onclick="onLogout()">Logout</button>
+        <br>
+        <h3 id="corecct">login sebagai ndii</h3>
+        <h3 id="incorecct">Password atau username anda salah</h3>
+    </div>
+
+    <script src="register.js">
+        // 
+    </script>
+</body>
+
+</html>

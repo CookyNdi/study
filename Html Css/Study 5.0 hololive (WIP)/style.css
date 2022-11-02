@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+#banner {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.background img{
+    position: relative;
+    width: 100%;
+    height: 745px;
+    margin-top: -90px;
+}
+
+.background::before{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    opacity: .4;
+    width: 100%;
+    height: 85vh;
+}
+
+nav{
+    position: absolute;
+    z-index: 2;
+}
+
+.navbar{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    margin: 5px ;
+    padding: 5px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.navbar img{
+    margin: 5px 400px 0px 10px;
+    width: 220px;
+}
+
+.textPage1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textPage1 p{
+    margin-top: -80px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.textPage1 h1{
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+#audition{
+    width: 100%;
+    height: 100vh;
+    background: #69d3ee;
+}

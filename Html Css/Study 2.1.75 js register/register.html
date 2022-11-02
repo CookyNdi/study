@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #root {
+        background-color: tomato;
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        height: 100vh;
+        align-items: center;
+    }
+
+    #form{
+        margin-top: 20px;
+    }
+
+    #root h3 {
+        display: none;
+    }
+
+    #logout {
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        background: #eaeaea;
+        border: 10px solid #eaeaea;
+        border-radius: 25px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <a href="index.html">login</a>
+        <div id="form">
+            <h5>register</h5>
+            <input placeholder="username" type="text" id="usernameInput" />
+            <input placeholder="password" type="password" id="passwordInput" />
+            <button onclick="onRegis()" id="btn">login</button>
+        </div>
+        <button id="logout" onclick="onLogout()">Logout</button>
+        <br>
+        <h3 id="admin">login sebagai admin</h3>
+        <h3 id="basic">login sebagai basic</h3>
+    </div>
+
+    <script src="register.js">
+    </script>
+</body>
+
+</html>

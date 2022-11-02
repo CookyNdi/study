@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Poppins&family=Roboto&family=Work+Sans&display=swap');
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Work Sans', sans-serif;
