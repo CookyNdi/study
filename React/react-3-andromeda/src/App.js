@@ -1,8 +1,17 @@
-import Navbar from './components/Navbar'
+import './style/Main.css';
+import Navigationbar from './components/Navigationbar'
+import ContentContainer from './components/ContentContainer';
 
 function App() {
   return (
-    <Navbar></Navbar>
+    <div>
+      <div>
+        <Navigationbar />
+      </div>
+      <div className='Content'>
+        <ContentContainer />
+      </div>
+    </div>
   );
 }
 
