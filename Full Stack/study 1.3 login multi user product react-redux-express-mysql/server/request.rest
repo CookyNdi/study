@@ -1,0 +1,92 @@
+//Create a User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "ade",
+  "email": "ade@gmail.com",
+  "password": "12345678",
+  "confPassword": "12345678",
+  "role": "user"
+}
+
+###
+//get all user
+GET http://localhost:5000/users
+
+###
+//get single user
+GET http://localhost:5000/users/6e6df7bc-b1ff-4283-917f-ce0d9fb65a2d
+
+###
+//update a user
+PATCH  http://localhost:5000/users/6e6df7bc-b1ff-4283-917f-ce0d9fb65a2d
+Content-Type: application/json
+
+{
+  "name": "Suisei",
+  "email": "hoshimati@gmail.com",
+  "password": "",
+  "confPassword": "",
+  "role": "admin"
+}
+
+###
+//delete a user
+DELETE http://localhost:5000/users/ea1ef47e-a0a1-4d65-a51f-117cd5d5cd91
+
+
+###
+//Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "hoshimati@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "CookyNdi@gmail.com",
+    "password": "1234567"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE  http://localhost:5000/logout
+
+
+###
+//get all product
+GET http://localhost:5000/products
+
+###
+//get single product
+GET http://localhost:5000/products/0200a625-fdce-498e-aeea-bc1aa8a41195
+
+###
+POST  http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 9",
+    "price": 354
+}
+
+###
+PATCH   http://localhost:5000/products/0200a625-fdce-498e-aeea-bc1aa8a41195
+Content-Type: application/json
+
+{
+    "name": "Product 5",
+    "price": 354
+}
+
+###
+DELETE    http://localhost:5000/products/bf25068f-4261-4930-ac18-f8e18797c86b
