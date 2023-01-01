@@ -13,10 +13,12 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    transition: .5s;
 }
 
-body.dark .containerNavText{
+body.dark .containerNavText {
     background: #DADADA;
+    transition: .5s;
 }
 
 .logoList {
@@ -36,7 +38,7 @@ body.dark .containerNavText{
     font-size: 25px;
 }
 
-body.dark .logoList a h1{
+body.dark .logoList a h1 {
     color: #1D1E20;
 }
 
@@ -55,7 +57,7 @@ body.dark .logoList a h1{
     color: #ECECEC;
 }
 
-body.dark .logoList ul li a{
+body.dark .logoList ul li a {
     color: #1D1E20;
 }
 
@@ -142,7 +144,7 @@ body.dark #lightBtn::after {
     padding: 45px;
 }
 
-body.dark .content{
+body.dark .content {
     background-color: #ECECEC;
 }
 
@@ -154,7 +156,7 @@ body.dark .content{
     margin-left: 30px;
 }
 
-body.dark .mainText{
+body.dark .mainText {
     color: #1D1E20;
 }
 
@@ -165,7 +167,7 @@ body.dark .mainText{
     letter-spacing: 1px;
 }
 
-body.dark .desc{
+body.dark .desc {
     color: #1D1E20;
 }
 
@@ -203,7 +205,7 @@ body.dark .btn {
     letter-spacing: 1px;
 }
 
-body.dark .btn p{
+body.dark .btn p {
     color: #1D1E20;
 }
 
@@ -218,7 +220,7 @@ body.dark .btn p{
     z-index: -1;
 }
 
-body.dark .btn::before{
+body.dark .btn::before {
     background: #1D1E20;
 }
 
@@ -226,7 +228,7 @@ body.dark .btn::before{
     width: 100%;
 }
 
-body.dark .btn:hover.btn::before{
+body.dark .btn:hover.btn::before {
     background: #1D1E20;
 }
 
@@ -234,6 +236,6 @@ body.dark .btn:hover.btn::before{
     color: #1D1E20;
 }
 
-body.dark .btn:hover.btn p{
+body.dark .btn:hover.btn p {
     color: #ECECEC;
 }

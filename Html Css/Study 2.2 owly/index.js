@@ -2,8 +2,6 @@ let element = document.body;
 let darkBtn = document.getElementById('darkBtn');
 let lightBtn = document.getElementById('lightBtn');
 
-
-
 function ondarkBtn() {
     element.classList.toggle('dark')
     lightBtn.style.display= "block"

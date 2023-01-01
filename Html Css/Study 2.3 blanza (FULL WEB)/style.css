@@ -1,1435 +1,1435 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Poppins&family=Roboto&family=Work+Sans&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --backgroundColor: #F7F7F7;
-    --bgColor: #fff;
-    --bgColorSecondary: #eff0f5;
-    --primaryColor: #F57224;
-    --secondaryColor: #30356d;
-    --redColor: #d3232a;
-    --fontColor: #111;
-    --fontColorSecondary: #757575;
-    --boxShadow: rgba(0, 0, 0, 0.5);
+  --backgroundColor: #F7F7F7;
+  --bgColor: #fff;
+  --bgColorSecondary: #eff0f5;
+  --primaryColor: #F57224;
+  --secondaryColor: #30356d;
+  --redColor: #d3232a;
+  --fontColor: #111;
+  --fontColorSecondary: #757575;
+  --boxShadow: rgba(0, 0, 0, 0.5);
 }
 
 body {
-    width: 100%;
-    background: var(--backgroundColor);
+  width: 100%;
+  background: var(--backgroundColor);
 }
 
 #navbar {
-    width: 100%;
-    height: 120px;
-    position: fixed;
-    z-index: 1000;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  z-index: 1000;
 }
 
 .navbarAlt {
-    width: 100%;
-    height: 125px;
+  width: 100%;
+  height: 125px;
 }
 
 .navbar1 {
-    width: 100%;
-    height: 30px;
-    background: var(--backgroundColor);
-    display: block;
-    align-items: center;
+  width: 100%;
+  height: 30px;
+  background: var(--backgroundColor);
+  display: block;
+  align-items: center;
 }
 
 .navbar1 ul {
-    display: flex;
-    justify-content: right;
-    margin: auto 100px;
+  display: flex;
+  justify-content: right;
+  margin: auto 100px;
 }
 
 .navbar1 ul li {
-    list-style-type: none;
-    padding: 5px 10px;
+  list-style-type: none;
+  padding: 5px 10px;
 }
 
 .navbar1 ul li a {
-    text-decoration: none;
-    color: var(--fontColor);
-    text-transform: uppercase;
-    font-size: 14px;
+  text-decoration: none;
+  color: var(--fontColor);
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .navbar2 {
-    width: 100%;
-    height: 100px;
-    background: var(--bgColor);
-    display: flex;
-    padding-left: 100px;
+  width: 100%;
+  height: 100px;
+  background: var(--bgColor);
+  display: flex;
+  padding-left: 100px;
 }
 
 .navbar2 a {
-    text-decoration: none;
-    color: var(--secondaryColor);
-    font-size: 40px;
-    font-weight: 900;
-    padding: 20px 0;
-    padding-right: 50px;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 0;
+  padding-right: 50px;
 }
 
 .fa-shopping-bag {
-    margin-right: 10px;
-    color: var(--primaryColor);
+  margin-right: 10px;
+  color: var(--primaryColor);
 }
 
 .searchSec {
-    display: flex;
-    margin: auto 10px;
+  display: flex;
+  margin: auto 10px;
 }
 
 #search {
-    width: 560px;
-    height: 45px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-    padding: 10px;
-    background: var(--bgColorSecondary);
+  width: 560px;
+  height: 45px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 10px;
+  background: var(--bgColorSecondary);
 }
 
 #searchBtn {
-    width: 50px;
-    height: 45px;
-    font-size: 25px;
-    border-radius: 0 5px 5px 0;
-    background: var(--primaryColor);
-    display: block;
-    text-align: center;
-    cursor: pointer;
+  width: 50px;
+  height: 45px;
+  font-size: 25px;
+  border-radius: 0 5px 5px 0;
+  background: var(--primaryColor);
+  display: block;
+  text-align: center;
+  cursor: pointer;
 }
 
 .fa-search {
-    color: var(--bgColor);
-    margin-top: 8px;
+  color: var(--bgColor);
+  margin-top: 8px;
 }
 
 #chart {
-    text-decoration: none;
-    color: var(--secondaryColor);
-    font-size: 30px;
-    font-weight: 900;
-    padding: 25px 0;
-    padding-right: 50px;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-size: 30px;
+  font-weight: 900;
+  padding: 25px 0;
+  padding-right: 50px;
 }
 
 .fa-shopping-basket {
-    margin: 12px 20px;
+  margin: 12px 20px;
 }
 
 #content {
-    margin: auto 100px;
-    width: 85%;
+  margin: auto 100px;
+  width: 85%;
 }
 
 .content1 {
-    margin-top: 10px;
-    background: var(--bgColor);
-    border: var(--backgroundColor) solid 2px;
-    display: flex;
+  margin-top: 10px;
+  background: var(--bgColor);
+  border: var(--backgroundColor) solid 2px;
+  display: flex;
 }
 
 .content1 ul {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
 }
 
 .content1 ul li {
-    list-style-type: none;
-    padding: 3px 0;
+  list-style-type: none;
+  padding: 3px 0;
 }
 
 .content1 ul li a {
-    text-decoration: none;
-    color: var(--fontColorSecondary);
-    text-transform: capitalize;
-    font-size: 14px;
+  text-decoration: none;
+  color: var(--fontColorSecondary);
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
 .contentImg {
-    width: 100%;
-    background: url(asset/contentImg.jpg);
-    padding: none;
-    background-size: cover;
-    background-position: 50% 50%;
-    cursor: pointer;
+  width: 100%;
+  background: url(asset/contentImg.jpg);
+  padding: none;
+  background-size: cover;
+  background-position: 50% 50%;
+  cursor: pointer;
 }
 
 .content2 {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content2 h4 {
-    width: 370px;
-    padding: 10px;
-    border-radius: 10px;
-    background: var(--bgColor);
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .3s;
+  width: 370px;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--bgColor);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .fa-shopping-cart,
 .fa-mobile,
 .fa-credit-card {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .content2 h4:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 #flasSale {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .content3 {
-    width: 100%;
-    height: 360px;
-    background: var(--bgColor);
-    border-radius: 5px;
+  width: 100%;
+  height: 360px;
+  background: var(--bgColor);
+  border-radius: 5px;
 }
 
 .infoContent {
-    width: 100%;
-    height: 60px;
-    border-bottom: var(--bgColorSecondary) solid 2px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 60px;
+  border-bottom: var(--bgColorSecondary) solid 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contentInfo {
-    display: flex;
+  display: flex;
 }
 
 .contentInfo h4 {
-    margin: auto 25px;
-    font-size: 15px;
-    font-weight: 200;
+  margin: auto 25px;
+  font-size: 15px;
+  font-weight: 200;
 }
 
 .contentInfo h4 span {
-    color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 .contentInfo p {
-    padding: 8px;
-    margin: auto 5px;
-    background: var(--redColor);
-    border-radius: 5px;
-    color: var(--bgColor);
-    font-weight: 600;
+  padding: 8px;
+  margin: auto 5px;
+  background: var(--redColor);
+  border-radius: 5px;
+  color: var(--bgColor);
+  font-weight: 600;
 }
 
 #days {
-    display: none;
+  display: none;
 }
 
 .belanjaSemua {
-    margin: auto 35px;
-    padding: 8px;
-    border: var(--primaryColor) solid 1px;
-    color: var(--primaryColor);
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .3s;
+  margin: auto 35px;
+  padding: 8px;
+  border: var(--primaryColor) solid 1px;
+  color: var(--primaryColor);
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .belanjaSemua:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .product {
-    display: flex;
+  display: flex;
 }
 
 .product1 {
-    width: 19%;
-    margin-top: 8px;
-    margin: 8px 5px 0 6px;
-    height: 270px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: .2s;
+  width: 19%;
+  margin-top: 8px;
+  margin: 8px 5px 0 6px;
+  height: 270px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .product1 .imgContent {
-    width: 100%;
-    height: 180px;
-    background: url(asset/cloth.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
+  width: 100%;
+  height: 180px;
+  background: url(asset/cloth.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 .product2 {
-    width: 19%;
-    margin-top: 8px;
-    margin: 8px 5px 0 6px;
-    height: 270px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: .2s;
+  width: 19%;
+  margin-top: 8px;
+  margin: 8px 5px 0 6px;
+  height: 270px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .product2 .imgContent {
-    width: 100%;
-    height: 180px;
-    background: url(asset/hat.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
+  width: 100%;
+  height: 180px;
+  background: url(asset/hat.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 .product3 {
-    width: 19%;
-    margin-top: 8px;
-    margin: 8px 5px 0 6px;
-    height: 270px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: .2s;
+  width: 19%;
+  margin-top: 8px;
+  margin: 8px 5px 0 6px;
+  height: 270px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .product3 .imgContent {
-    width: 100%;
-    height: 180px;
-    background: url(asset/jeans.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
+  width: 100%;
+  height: 180px;
+  background: url(asset/jeans.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 .product4 {
-    width: 19%;
-    margin-top: 8px;
-    margin: 8px 5px 0 6px;
-    height: 270px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: .2s;
+  width: 19%;
+  margin-top: 8px;
+  margin: 8px 5px 0 6px;
+  height: 270px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .product4 .imgContent {
-    width: 100%;
-    height: 180px;
-    background: url(asset/tissue.jpg);
-    background-size: cover;
-    background-position: 50% 70%;
+  width: 100%;
+  height: 180px;
+  background: url(asset/tissue.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
 }
 
 .product5 {
-    width: 19%;
-    margin-top: 8px;
-    margin: 8px 5px 0 6px;
-    height: 270px;
-    background: var(--bgColor);
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    transition: .2s;
+  width: 19%;
+  margin-top: 8px;
+  margin: 8px 5px 0 6px;
+  height: 270px;
+  background: var(--bgColor);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .product5 .imgContent {
-    width: 100%;
-    height: 180px;
-    background: url(asset/shoes.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
+  width: 100%;
+  height: 180px;
+  background: url(asset/shoes.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 .namaProduk {
-    color: var(--fontColor);
-    font-size: 15px;
-    margin-left: 3px;
-    padding: 5px;
+  color: var(--fontColor);
+  font-size: 15px;
+  margin-left: 3px;
+  padding: 5px;
 }
 
 .harga {
-    margin-left: 3px;
-    padding: 5px;
-    color: var(--primaryColor);
+  margin-left: 3px;
+  padding: 5px;
+  color: var(--primaryColor);
 }
 
 .discound {
-    font-size: 12px;
-    color: var(--fontColorSecondary);
-    margin-left: 3px;
-    padding: 5px;
+  font-size: 12px;
+  color: var(--fontColorSecondary);
+  margin-left: 3px;
+  padding: 5px;
 }
 
 .discound span {
-    font-size: 15px;
-    margin-left: 5px;
-    color: var(--fontColor);
+  font-size: 15px;
+  margin-left: 5px;
+  color: var(--fontColor);
 }
 
 .product1:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .product2:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .product3:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .product4:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .product5:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 #PalingPoluler {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .content4 {
-    width: 100%;
-    height: 220px;
-    background: var(--bgColor);
-    border-radius: 5px;
-    display: flex;
+  width: 100%;
+  height: 220px;
+  background: var(--bgColor);
+  border-radius: 5px;
+  display: flex;
 }
 
 /* poluler 1 */
 
 .productP1 {
-    width: 20%;
-    height: 100%;
-    background-color: #ecf5f8;
-    transition: .2s;
+  width: 20%;
+  height: 100%;
+  background-color: #ecf5f8;
+  transition: .2s;
 }
 
 .productP1:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP1 .imgContent {
-    width: 100%;
-    height: 70%;
-    background-image: url(asset/hat.png);
-    background-size: 65%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 70%;
+  background-image: url(asset/hat.png);
+  background-size: 65%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .productP1 p {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP1 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 .listPoluler {
-    width: 100%;
-    background-color: var(--bgColor);
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
 /* populer 2 */
 
 .productP2 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f8f1e9;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f8f1e9;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP2:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP2 .imgContent {
-    width: 60%;
-    height: 70%;
-    margin: 0 -10px;
-    background-image: url(asset/cloth.png);
-    background-size: 40%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 70%;
+  margin: 0 -10px;
+  background-image: url(asset/cloth.png);
+  background-size: 40%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP2 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP2 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 3 */
 
 .productP3 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f9eaea;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f9eaea;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP3:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP3 .imgContent {
-    width: 60%;
-    height: 60%;
-    margin: 0 -10px;
-    background-image: url(asset/hp.png);
-    background-size: 45%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 60%;
+  margin: 0 -10px;
+  background-image: url(asset/hp.png);
+  background-size: 45%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP3 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP3 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 4 */
 
 .productP4 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #eceef7;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #eceef7;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP4:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP4 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/jeans.png);
-    background-size: 40%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/jeans.png);
+  background-size: 40%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP4 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP4 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 5 */
 
 .productP5 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f2ede9;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f2ede9;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP5:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP5 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/shoes.png);
-    background-size: 40%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/shoes.png);
+  background-size: 40%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP5 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP5 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 6 */
 
 .productP6 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f8f1e9;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f8f1e9;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP6:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP6 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/shoes\ footbal.png);
-    background-size: 65%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/shoes\ footbal.png);
+  background-size: 65%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP6 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP6 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 7 */
 
 .productP7 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f9eaea;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f9eaea;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP7:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP7 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/koas.png);
-    background-size: 60%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/koas.png);
+  background-size: 60%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP7 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP7 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 8 */
 
 .productP8 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #eceef7;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #eceef7;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP8:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP8 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/bag.png);
-    background-size: 40%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/bag.png);
+  background-size: 40%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP8 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP8 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* populer 9 */
 
 .productP9 {
-    width: 25%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    background-color: #f2ede9;
-    cursor: pointer;
-    transition: .2s;
+  width: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  background-color: #f2ede9;
+  cursor: pointer;
+  transition: .2s;
 }
 
 .productP9:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .productP9 .imgContent {
-    width: 60%;
-    height: 50%;
-    margin: 0 -10px;
-    background-image: url(asset/watch.png);
-    background-size: 50%;
-    background-position: 50% 70%;
-    background-repeat: no-repeat;
+  width: 60%;
+  height: 50%;
+  margin: 0 -10px;
+  background-image: url(asset/watch.png);
+  background-size: 50%;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
 }
 
 .infoPopuler {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .productP9 p {
-    text-align: center;
-    color: var(--fontColor);
-    text-transform: capitalize;
-    font-size: 17px;
+  text-align: center;
+  color: var(--fontColor);
+  text-transform: capitalize;
+  font-size: 17px;
 }
 
 .productP9 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* content 5 */
 #blanzaMall {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .content5 {
-    width: 100%;
-    height: 220px;
-    background-color: var(--bgColor);
-    display: flex;
+  width: 100%;
+  height: 220px;
+  background-color: var(--bgColor);
+  display: flex;
 }
 
 /* card 1 */
 
 .cardMall1 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall1:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall1 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall1 .imgContent .imgAfter {
-    background-color: var(--bgColor);
-    top: 30%;
-    left: 38%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: var(--backgroundColor) solid 3px;
+  background-color: var(--bgColor);
+  top: 30%;
+  left: 38%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: var(--backgroundColor) solid 3px;
 }
 
 
 .cardMall1 .imgContent img {
-    display: block;
-    margin: 40px auto;
-    width: 70%;
-    height: 45%;
+  display: block;
+  margin: 40px auto;
+  width: 70%;
+  height: 45%;
 }
 
 .cardMall1 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall1 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 
 /* card 3 */
 
 .cardMall2 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall2:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall2 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall2 .imgContent .imgAfter {
-    background-color: #fff;
-    top: 48%;
-    left: 39%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: #eff0f5 solid 3px;
+  background-color: #fff;
+  top: 48%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: #eff0f5 solid 3px;
 }
 
 .cardMall2 .imgContent .imgAfter img {
-    margin-top: 9px;
-    width: 40px;
-    width: 40;
+  margin-top: 9px;
+  width: 40px;
+  width: 40;
 }
 
 .cardMall2 .imgContent img {
-    display: block;
-    margin: 30px auto;
-    width: 60%;
-    height: 60%;
+  display: block;
+  margin: 30px auto;
+  width: 60%;
+  height: 60%;
 }
 
 .cardMall2 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall2 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* card 3 */
 
 .cardMall3 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall3:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall3 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall3 .imgContent .imgAfter {
-    background-color: #fff;
-    top: 48%;
-    left: 39%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: var(--backgroundColor) solid 3px;
+  background-color: #fff;
+  top: 48%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: var(--backgroundColor) solid 3px;
 }
 
 .cardMall3 .imgContent .imgAfter img {
-    margin-top: 9px;
-    width: 40px;
+  margin-top: 9px;
+  width: 40px;
 }
 
 .cardMall3 .imgContent img {
-    display: block;
-    margin: 30px auto;
-    width: 40%;
-    height: 60%;
+  display: block;
+  margin: 30px auto;
+  width: 40%;
+  height: 60%;
 }
 
 .cardMall3 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall3 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 
 /* card 4 */
 
 .cardMall4 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall4:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall4 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall4 .imgContent .imgAfter {
-    background-color: #fff;
-    top: 45%;
-    left: 39%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: var(--backgroundColor) solid 3px;
+  background-color: #fff;
+  top: 45%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: var(--backgroundColor) solid 3px;
 }
 
 .cardMall4 .imgContent .imgAfter img {
-    margin-top: 9px;
-    width: 40px;
+  margin-top: 9px;
+  width: 40px;
 }
 
 .cardMall4 .imgContent img {
-    display: block;
-    margin: 10px auto;
-    width: 40%;
-    height: 60%;
+  display: block;
+  margin: 10px auto;
+  width: 40%;
+  height: 60%;
 }
 
 .cardMall4 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall4 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* card 5 */
 
 .cardMall5 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall5:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall5 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall5 .imgContent .imgAfter {
-    top: 48%;
-    left: 39%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: var(--backgroundColor) solid 3px;
-    overflow: hidden;
+  top: 48%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: var(--backgroundColor) solid 3px;
+  overflow: hidden;
 }
 
 .cardMall5 .imgContent .imgAfter img {
-    width: 90px;
-    height: 80px;
-    margin-left: -23px;
-    margin-top: -18px;
+  width: 90px;
+  height: 80px;
+  margin-left: -23px;
+  margin-top: -18px;
 }
 
 .cardMall5 .imgContent img {
-    display: block;
-    margin: 20px auto;
-    width: 50%;
-    height: 70%;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  height: 70%;
 }
 
 .cardMall5 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall5 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 
 /* card 5 */
 
 .cardMall6 {
-    width: 17%;
-    height: 100%;
-    background-color: var(--bgColor);
-    text-align: center;
-    margin-left: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: .3s;
+  width: 17%;
+  height: 100%;
+  background-color: var(--bgColor);
+  text-align: center;
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .cardMall6:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 .cardMall6 .imgContent {
-    background-color: #eceef7;
-    width: 100%;
-    height: 60%;
+  background-color: #eceef7;
+  width: 100%;
+  height: 60%;
 }
 
 .cardMall6 .imgContent .imgAfter {
-    background-color: #046a38;
-    top: 48%;
-    left: 39%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    border: var(--backgroundColor) solid 3px;
-    overflow: hidden;
-    font-size: 15px;
+  background-color: #046a38;
+  top: 48%;
+  left: 39%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: var(--backgroundColor) solid 3px;
+  overflow: hidden;
+  font-size: 15px;
 }
 
 .cardMall6 .imgContent .imgAfter p {
-    color: #fff;
-    margin-top: 9px;
-    font-weight: 300;
+  color: #fff;
+  margin-top: 9px;
+  font-weight: 300;
 }
 
 .cardMall6 .imgContent img {
-    display: block;
-    margin: 20px auto;
-    width: 50%;
-    height: 70%;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  height: 70%;
 }
 
 .cardMall6 p {
-    margin-top: 30px;
-    color: var(--fontColor);
-    font-size: 18px;
+  margin-top: 30px;
+  color: var(--fontColor);
+  font-size: 18px;
 }
 
 .cardMall6 p span {
-    color: var(--fontColorSecondary);
-    font-size: 14px;
+  color: var(--fontColorSecondary);
+  font-size: 14px;
 }
 
 /* content 6 */
 
 #Categories {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .content6 {
-    width: 100%;
-    height: 320px;
-    background-color: var(--bgColor);
+  width: 100%;
+  height: 320px;
+  background-color: var(--bgColor);
 }
 
 .content6 ul {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .content6 ul li {
-    list-style-type: none;
-    background: #eceef7;
-    width: 200px;
-    height: 30px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
+  list-style-type: none;
+  background: #eceef7;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
 }
 
 .content6 ul li a {
-    display: block;
-    margin-top: 5px;
-    color: var(--fontColor);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: 600;
-    font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  color: var(--fontColor);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .content6 ul li:hover {
-    transform: scale(1.01);
-    box-shadow: var(--boxShadow) 3px 3px 3px;
+  transform: scale(1.01);
+  box-shadow: var(--boxShadow) 3px 3px 3px;
 }
 
 #footer {
-    margin: auto 100px;
-    width: 85%;
+  margin: auto 100px;
+  width: 85%;
 }
 
 .footerContainer {
-    margin-top: 50px;
-    border-top: var(--bgColorSecondary) solid 3px;
-    width: 100%;
-    height: 350px;
-    background-color: var(--bgColor);
+  margin-top: 50px;
+  border-top: var(--bgColorSecondary) solid 3px;
+  width: 100%;
+  height: 350px;
+  background-color: var(--bgColor);
 }
 
 .footerContainer .logo {
-    text-decoration: none;
-    color: var(--secondaryColor);
-    font-size: 40px;
-    font-weight: 900;
-    display: block;
-    text-align: center;
-    padding: 20px;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  font-size: 40px;
+  font-weight: 900;
+  display: block;
+  text-align: center;
+  padding: 20px;
 }
 
 .footerRow {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footerContainer ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .footerContainer ul li a {
-    color: var(--secondaryColor);
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 14px;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
 .footer1 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer1 h1 {
-    color: var(--secondaryColor);
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 600;
-    margin-bottom: 8px;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .footer2 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer2 h1 {
-    color: var(--secondaryColor);
-    font-size: 20px;
-    text-transform: capitalize;
-    font-weight: 600;
-    margin-bottom: 8px;
+  color: var(--secondaryColor);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .footer3 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer3 img {
-    width: 120px;
-    margin: 0 10px;
-    cursor: pointer;
+  width: 120px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 .sideNav {
-    position: fixed;
-    z-index: 10000;
-    top: 60%;
-    left: 0%;
-    width: 50px;
-    background: var(--bgColor);
-    border: var(--bgColorSecondary) solid 2px;
-    border-radius: 5px;
-    display: block;
-    transition: 1s;
+  position: fixed;
+  z-index: 10000;
+  top: 60%;
+  left: 0%;
+  width: 50px;
+  background: var(--bgColor);
+  border: var(--bgColorSecondary) solid 2px;
+  border-radius: 5px;
+  display: block;
+  transition: 1s;
 }
 
-.active .sideNav{
-    display: block;
-    transition: .5s;
+.active .sideNav {
+  display: block;
+  transition: .5s;
 }
 
-.sideNav a{
-    display: block;
-    margin: 20px;
-    color: var(--fontColor);
+.sideNav a {
+  display: block;
+  margin: 20px;
+  color: var(--fontColor);
 }
 
-#flasSaleLabel{
-    cursor: pointer;
+#flasSaleLabel {
+  cursor: pointer;
 }
 
-#flasSaleLabel::after{
-    content: 'Flash Sale';
-    position: absolute;
-    background-color: var(--bgColor);
-    border-radius: 5px;
-    width: 110px;
-    height: 25px;
-    top: 8%;
-    left: 100%;
-    display: none;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 15px;
+#flasSaleLabel::after {
+  content: 'Flash Sale';
+  position: absolute;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  width: 110px;
+  height: 25px;
+  top: 8%;
+  left: 100%;
+  display: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-#flasSaleLabel:hover#flasSaleLabel::after{
-    display: block;
+#flasSaleLabel:hover#flasSaleLabel::after {
+  display: block;
 }
 
-#palingPopularLabel{
-    cursor: pointer;
+#palingPopularLabel {
+  cursor: pointer;
 }
 
-#palingPopularLabel::after{
-    content: 'Paling Popular';
-    position: absolute;
-    background-color: var(--bgColor);
-    border-radius: 5px;
-    width: 110px;
-    height: 25px;
-    top: 28%;
-    left: 100%;
-    display: none;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 15px;
+#palingPopularLabel::after {
+  content: 'Paling Popular';
+  position: absolute;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  width: 110px;
+  height: 25px;
+  top: 28%;
+  left: 100%;
+  display: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-#palingPopularLabel:hover#palingPopularLabel::after{
-    display: block;
+#palingPopularLabel:hover#palingPopularLabel::after {
+  display: block;
 }
 
-#blanzaMallLabel{
-    cursor: pointer;
+#blanzaMallLabel {
+  cursor: pointer;
 }
 
-#blanzaMallLabel::after{
-    content: 'Blanza Mall';
-    position: absolute;
-    background-color: var(--bgColor);
-    border-radius: 5px;
-    width: 110px;
-    height: 25px;
-    top: 50%;
-    left: 100%;
-    display: none;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 15px;
+#blanzaMallLabel::after {
+  content: 'Blanza Mall';
+  position: absolute;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  width: 110px;
+  height: 25px;
+  top: 50%;
+  left: 100%;
+  display: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-#blanzaMallLabel:hover#blanzaMallLabel::after{
-    display: block;
+#blanzaMallLabel:hover#blanzaMallLabel::after {
+  display: block;
 }
 
-#categoriesLabel{
-    cursor: pointer;
+#categoriesLabel {
+  cursor: pointer;
 }
 
-#categoriesLabel::after{
-    content: 'Categories';
-    position: absolute;
-    background-color: var(--bgColor);
-    border-radius: 5px;
-    width: 110px;
-    height: 25px;
-    top: 70%;
-    left: 100%;
-    display: none;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-weight: 600;
-    font-size: 15px;
+#categoriesLabel::after {
+  content: 'Categories';
+  position: absolute;
+  background-color: var(--bgColor);
+  border-radius: 5px;
+  width: 110px;
+  height: 25px;
+  top: 70%;
+  left: 100%;
+  display: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
-#categoriesLabel:hover#categoriesLabel::after{
-    display: block;
+#categoriesLabel:hover#categoriesLabel::after {
+  display: block;
 }
