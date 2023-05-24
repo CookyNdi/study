@@ -13,18 +13,17 @@ const UserList = () => {
   const [msg, setMsg] = useState("");
 
   useEffect(() => {
+    const getUsers = async () => {
+      const response = await axios.get(
+        `http://localhost:5000/users?search_query=${keyword}&page=${page}&limit=${limit}`
+      );
+      setUsers(response.data.result);
+      setPage(response.data.page);
+      setPages(response.data.totalPage);
+      setRows(response.data.totalRows);
+    };
     getUsers();
-  }, [page, keyword]);
-
-  const getUsers = async () => {
-    const response = await axios.get(
-      `http://localhost:5000/users?search_query=${keyword}&page=${page}&limit=${limit}`
-    );
-    setUsers(response.data.result);
-    setPage(response.data.page);
-    setPages(response.data.totalPage);
-    setRows(response.data.totalRows);
-  };
+  }, [page, keyword, limit]);
 
   const changePage = ({ selected }) => {
     setPage(selected);
@@ -89,12 +88,7 @@ const UserList = () => {
             Total Rows : {rows} Page: {rows ? page + 1 : 0} of {pages}
           </p>
           <p className="has-text-centered has-text-danger">{msg}</p>
-          <nav
-            className="pagination is-centered"
-            role="navigation"
-            key={rows}
-            aria-label="pagination"
-          >
+          <nav className="pagination is-centered" role="navigation" key={rows} aria-label="pagination">
             <ReactPaginate
               previousLabel={"< prev"}
               nextLabel={"next >"}
